@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" slick-uniqueid="3">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./Homepage_files/sty/jemdoc.css" type="text/css">
+<style type="text/css">
+</style>
+<title>NIvsCG</title>
+</head>
+
+
+<body>
+<div id="layout-content" style="margin-top:25px">
+
+<!-- teaser -->
+<table>
+<tbody>
+  <tr>    
+    <td valign="top" align="center">     
+      <b><font size="6" face="Times New Roman" >A New General Construction of Complementary Sequence Pairs over 4<sup>q</sup>-QAM</font></b>
+      <br><br>
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top" align="center">
+         <font size="4" face="Times New Roman" > <a href="https://web.xidian.edu.cn/zlwang/"  target="_blank">Zilong Wang</a> </font> <font size="2" face="Times New Roman"><sup>1</sup></font> &emsp;&emsp;
+         <font size="4" face="Times New Roman" > Erzhong Xue </font> <font size="2" face="Times New Roman"><sup>1</sup></font> &emsp;&emsp;
+         <font size="4" face="Times New Roman" > <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ggong"  target="_blank">Guang Gong</a> </font> <font size="2" face="Times New Roman"><sup>2</sup></font> &emsp;&emsp;
+         <br> 
+         <font size="2" face="Times New Roman"> <sup>1</sup></font> <font size="3" face="Times New Roman" ><a href="https://isn.xidian.edu.cn/" target="_blank">State Key Laboratory of Integrated Service Networks, Xidian University</a></font>
+         <br>
+         <font size="2" face="Times New Roman"> <sup>2</sup></font> <font size="3" face="Times New Roman" ><a href="https://uwaterloo.ca/electrical-computer-engineering/" target="_blank">Department of Electrical and Computer Engineering, University of Waterloo</a> </font>
+         <br> <br> 
+    </td>
+    </tr>
+
+    <!-- <tr>
+      <td valign="top" align="center">
+         <img width="75%" src="./NIvsCG_files/comp.png">
+         <br>
+         <p style="text-align:justify;">
+         <font face="Times New Roman" >
+          A pairs of images about architecture. Computer-generated images are on the left side, and nature images are on the right side. These images are from the SPL2018 dataset.
+         </font>
+         </p>
+         <br>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top" align="center">
+         <img width="90%" src="./NIvsCG_files/network.png">
+         <br>
+         <p style="text-align:justify;">
+         <font face="Times New Roman" >
+           Architecture of our network ScNet and the hybrid correlation module. The network input is a 96 × 96 image patch, and output is the label (NI or CG). Each convolutional layer shows the kernel size and the number of feature maps, e.g., “3 × 3 Conv 32” means the kernel size is 3 × 3 and the number of output channels is 32.
+         </font>
+         </p>
+      </td>
+    </tr> -->
+
+</tbody>
+</table>
+
+<!-- Abstract -->
+<h2>Abstract</h2>
+<table>
+  <tbody>
+  <tr>
+    <p style="text-align:justify;">
+    <font face="Times New Roman" >
+      The previous constructions of quadrature amplitude modulation (QAM) Golay complementary sequences (GCSs) were generalized as 4<sup>q</sup>-QAM GCSs of length 2<sup>m</sup> by Li (Generalised Cases I-III for q >= 2) in 2010 and Liu (Generalised Cases IV-V for q >= 3) in 2013 respectively. The results can be given by weighted sum of q quadrature phase shift keying (QPSK) standard GCSs, which is represented as q-dimensional vectorial generalized Boolean functions (V-GBFs) in this paper. In line with their work, an extended construction of 4<sup>q</sup>-QAM GCSs of length 2<sup>m</sup> is proposed, including Generalized Gases I-V as special cases. If q is a composite number, a great number of new GCSs will arise. For example, in the case q = 4, the number of new GCSs is more than seven times than those in generalized cases IV-V. In the case q = 6, the ratio of the number of new GCSs and the Generalized Cases IV-V is greater than six and will increase in proportion with m. Moreover, based on the theory of array and paraunitary matrices, the proof implies all the mentioned GCSs are actually projections of Golay complementary arrays of size 2 × 2 × ... × 2.
+    </font>
+    </p>
+  </tr>
+  </tbody>
+</table>
+
+<!-- Experimental Results
+<h2>Experimental Results</h2>
+<table>
+  <tbody>
+    <tr>
+      <td valign="top" align="center">
+         <img width="45%" src="./NIvsCG_files/Loss_curve.png"> &emsp;&emsp;
+         <img width="45%" src="./NIvsCG_files/Accuracy_curve.png">
+         <br>
+         <p style="text-align:justify;">
+         <font face="Times New Roman" >
+          The left figure is the training loss of the ScNet and three corresponding variants. The training loss quickly decreases in the first 600 epochs and the network reaches the stability after about 1,000 epochs. The right figure shows the classification accuracies of the ScNet and three corresponding variants on the validation set. Among four networks, our proposed ScNet achieves the best performance.
+         </font>
+         </p>
+         <br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" align="center">
+         <img width="45%" src="./NIvsCG_files/visualization.png"> &emsp;&emsp;
+         <img width="45%" src="./NIvsCG_files/kernel.png">
+         <br>
+         <p style="text-align:justify;">
+         <font face="Times New Roman" >
+          The left figure visualizes feature maps on 1 × 1 convolutional layer of three parallel Conv1 modules. The first row is a natural image, and the second row is a computer-generated image. For the natural image, the words (red block of the first row) becomes more and more obscure from left to right. However, the words in the computer-generated image (red block of the second row) are sharp for three feature maps. The right figure shows the color mapping image of weights of each 1 × 1 convolutional kernel of ScNet trained on three random splits. The weights of the three Conv1 modules of each random split are roughly arranged in (+, 0, -), with no fixed order, which is similar to the idea of the input differential image. In addition, the absolute value of the three convolutional kernel weights is in three orders of magnitude.
+         </font>
+         </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Bibtex --
+<h2>Bibtex</h2>
+<table>
+  <tbody>
+  <tr>
+    <p style="text-align:justify;">
+    <font face="Times New Roman" >
+      Coming soon!
+    </font>
+    </p>
+  </tr>
+  </tbody>
+</table> -->
+
+<!-- Download -->
+<h2>Download</h2>
+<table>
+  <tbody>
+    <tr>
+      <td>
+          <strong>Paper</strong> [<a href="./4q-QAMPair_files/QAMPair_v7.pdf" target="_blank">PDF</a>] <br><br>
+          <!--<strong>Code </strong> [<a href="http://evergrow.github.io/">Github</a>] Coming soon! <br><br>-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</body>
+</html>
